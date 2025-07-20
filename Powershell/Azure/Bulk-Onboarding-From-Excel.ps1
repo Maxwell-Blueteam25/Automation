@@ -48,7 +48,7 @@ foreach ($user in $data) {
 
     # Create PasswordProfile object
     $passwordProfile = [Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.MicrosoftGraphPasswordProfile]::new()
-    $passwordProfile.Password = "TempPass123!"
+    $passwordProfile.Password = "PlaceHolder"
     $passwordProfile.ForceChangePasswordNextSignIn = $true
 
     $newUserParams = @{
